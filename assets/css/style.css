@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'CheddarJack'; /*a name to be used later*/
+    src: url('../fonts/cheddarjack.ttf'); /*URL to font*/
+}
+
+h1 {
+    font-family: 'CheddarJack';
+    font-size: 300%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav-name {
+    font-family: 'CheddarJack';
+    font-size: 250%;
+}
+
+#name {
+    font-family: 'CheddarJack';
+    font-size: 250%;
+
+}
+
+/* Small devices (landscape phones, 400px and up) */
+@media (min-width: 400px) {
+    #nav-name {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #nav-name {
+        display: none;
+    }
+    h1 {
+        font-size: 500%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #name {
+        display: none;
+    }
+    #nav-name {
+        display: list-item;
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
