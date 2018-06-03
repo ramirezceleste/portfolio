@@ -25,11 +25,12 @@ p {
 #end {
     margin-bottom: 15px;
     margin-top: 15px;
+    color: white;
 }
 
-img {
+/* img {
     width: 250px;
-}
+} */
 
 [type=text], [type=email], textarea {
     width: 100%;
@@ -49,9 +50,13 @@ img {
 }
 
 .fab {
-    font-size: 50px;
-    color: lightblue;
+    font-size: 70px;
+    color: #fe424d;
     padding-right: 20px;
+}
+
+#endcontainer {
+    background-color: #daecf3;
 }
 
 .fab:hover {
@@ -78,9 +83,28 @@ img {
     color: #022d41 !important;
 }
 
+/* .header-bar {
+    margin: 25px 0 75px 0;
+    width: 70px;
+    height: 4px;
+    background: #444649;
+    text-align: center!important;
+} */
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
 #fullpage {
     height: 100vh;
-    background-color: #daecf3;
+    color: white;
+    /* background-color: #daecf3; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("../images/desk.jpg");
+    background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
 }
 
 #navbar {
@@ -98,20 +122,23 @@ img {
 }
 
 footer {
-    background-color: #daecf3;
+    background-color: #fe424d;
     
 }
 
-a.button, a.btn, [type=button], [type=submit], button {
+[type=button] {
+}
+
+a.btn, [type=submit] {
     display: inline-block;
     -webkit-appearance: none;
     -webkit-transition: background 500ms ease;
     transition: background 500ms ease;
-    background-color: #022d41;
+    background-color: #fe424d;
     background-size: 300% auto;
     color: #fff;
     border: 0;
-    border-radius: 6px;
+    border-radius: 50px;
     text-align: center;
     vertical-align: middle;
     padding: 1rem 1.3rem;
@@ -124,7 +151,7 @@ a.button, a.btn, [type=button], [type=submit], button {
 }
 
 a.btn:hover {
-    background-color: #022d41;
+    background-color: #fe424d;
 }
 
 /* Small devices (landscape phones, 400px and up) */
