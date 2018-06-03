@@ -31,15 +31,17 @@ img {
     width: 250px;
 }
 
-/* #imgs {
-    width: 50px;
-} */
-
-/* #cardrowspace {
-    margin-left: 50px;
-    margin-right: 50px;
-} */
-
+[type=text], [type=email], textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #dee0e0;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
 
 #nav-name {
     font-family: 'CheddarJack';
@@ -47,8 +49,13 @@ img {
 }
 
 .fab {
-    font-size: 100px;
+    font-size: 50px;
     color: lightblue;
+    padding-right: 20px;
+}
+
+.fab:hover {
+    color: #022d41;
 }
 
 /* #navbar {
@@ -63,9 +70,21 @@ img {
     padding-top: 150px;
 }
 
+#nav-name, #name {
+    color: #022d41 !important; 
+}
+
+.nav-link {
+    color: #022d41 !important;
+}
+
 #fullpage {
     height: 100vh;
-    background-color: lightblue;
+    background-color: #daecf3;
+}
+
+#navbar {
+    background-color: #daecf3 !important;
 }
 
 #name {
@@ -79,10 +98,34 @@ img {
 }
 
 footer {
-    background-color: lightblue;
+    background-color: #daecf3;
     
 }
 
+a.button, a.btn, [type=button], [type=submit], button {
+    display: inline-block;
+    -webkit-appearance: none;
+    -webkit-transition: background 500ms ease;
+    transition: background 500ms ease;
+    background-color: #022d41;
+    background-size: 300% auto;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-shadow: 2px 3px 8px rgba(0,0,0,.1);
+    box-shadow: 2px 3px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+a.btn:hover {
+    background-color: #022d41;
+}
 
 /* Small devices (landscape phones, 400px and up) */
 @media (min-width: 400px) {
