@@ -28,9 +28,10 @@ p {
     color: white;
 }
 
-/* img {
-    width: 250px;
-} */
+img {
+    width: auto;
+    height: 250px;
+}
 
 [type=text], [type=email], textarea {
     width: 100%;
@@ -59,9 +60,9 @@ p {
     background-color: #daecf3;
 }
 
-.fab:hover {
+/* .fab:hover {
     color: #022d41;
-}
+} */
 
 /* #navbar {
     background: transparent !important;
