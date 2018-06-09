@@ -22,6 +22,14 @@ p {
     line-height: 1.6;
 }
 
+#margintopimg {
+    margin-top: 50px;
+}
+
+#charityconnectimg {
+    margin-top: 40px;
+}
+
 #end {
     margin-bottom: 15px;
     margin-top: 15px;
