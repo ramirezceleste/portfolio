@@ -42,8 +42,13 @@ p {
 }
 
 img {
-    width: auto;
-    height: 250px;
+    height: auto;
+    width: 50px;
+    margin: auto;
+}
+
+#laptopimgs {
+    width: 500px;
 }
 
 [type=text], [type=email], textarea {
@@ -83,10 +88,6 @@ img {
 
 .jumbotron-fluid {
     margin-bottom: 0px;
-}
-
-.fas {
-    font-size: 50px;
 }
 
 .card-img-top {
