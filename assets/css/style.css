@@ -200,10 +200,8 @@ footer {
     background-color: #fcb2a9;
 }
 
-[type=button] {
-}
 
-a.btn, [type=submit] {
+a.btn,[type=button], [type=submit] {
     display: inline-block;
     -webkit-appearance: none;
     -webkit-transition: background 500ms ease;
@@ -224,16 +222,18 @@ a.btn, [type=submit] {
     cursor: pointer;
 }
 
-a.btn:hover {
+a.btn:hover, [type=button]:hover {
     background-color: #fcb2a9;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 #img-slider, #img-sliders {
     height: auto;
     width: 300px;
 }
-
-
 
 * {box-sizing: border-box;}
 
@@ -266,8 +266,17 @@ a.btn:hover {
   border-radius: 50%;
 }
 
+.progress {
+    margin-bottom: 10px;
+}
 
+.modal-header {
+    margin: auto;
+}
 
+.progress-bar {
+    background-color: #fcb2a9;
+}
 
 
 /* Small devices (landscape phones, 400px and up) */
