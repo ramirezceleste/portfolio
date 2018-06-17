@@ -90,12 +90,10 @@
       <div class="col-md-12 text-center">
         <p>
           Hi there, I'm Celeste. I recently graduated from a full-stack coding bootcamp in San Diego, CA and I'm currently an undergraduate
-          at Washington State University Global Campus. Learning code has completely changed my life. Sounds silly, I know
-          but honestly, it has quickly become a passion of mine. I love the challenge, the learning process, creating beautifully
-          designed, responsive and user-friendly websites. Aside from coding, I have a personal lifestyle blog which you
-          can check out if you are interested here. Drinking coffee, going on long walks with my dog, watching Game of Thrones
-          (can it be 2019 already?!), photography and trying not to buy everything in the "Home" section at Target are just
-          some quick facts about me.
+          at Washington State University Global Campus. Coding has quickly become a passion of mine. I love the challenge,
+          the learning process, creating beautifully designed, responsive and user-friendly websites. Aside from programming,
+          I have a personal lifestyle blog. Drinking coffee, going on long walks with my dog, watching shows on Netflix,
+          photography and trying not to buy everything in the "Home" section at Target are just some quick facts about me.
         </p>
       </div>
     </div>
@@ -206,31 +204,58 @@
     </div>
     <br/>
     <div class="row">
-      <div class="col-md-6 text-center">
-        <img id="laptopimgs" src="./assets/images/beforeprojectaidsnigeria.png" alt="projectaidsnigeria">
-        <h1>Before</h1>
-      </div>
-      <div class="col-md-6 text-center">
-        <img id="laptopimgs" src="./assets/images/afterprojectaidsnigeria.png" alt="projectaidsnigeria">
-        <h1>After</h1>
+      <div class="col-md-12 text-center">
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="./assets/images/beforeprojectaidsnigeria.png" id="img-slider">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="./assets/images/afterprojectaidsnigeria.png" id="img-sliders">
+          </div>
+        </div>
       </div>
     </div>
     <br/>
     <div class="row">
-      <div class="col-md-6 text-center">
+      <div class="col-md-12 text-center">
         <p>Role: Front-End Developer</p>
         <p> Technologies Used: Youtube API, React-Youtube, React-Modal, Mongoose, React-Router-Dom, Express, Axios, Express-JWT,
           JWT-Decode, JSON Web Token, and Nodemailer.
         </p>
         <a class="btn btn-secondary" href="#" role="button">Visit Website</a>
-      </div>
-      <div class="col-md-6 text-center">
-        <p>Project AIDS Nigeria (PAN) is organized exclusively for the charitable and educational purpose of helping rural communities
-          in Nigeria combat the HIV/AIDS epidemic. For my last project during Coding Bootcamp my group and I got an amazing
-          opportunity to re-design and add more responsive elements to an existing website. Our client and founder of PAN,
-          Domale, wanted a more modern website with an interactive curriculum and a way for students to get certified to
-          start a PAN club at their school. We made sure to pay attention to details to ensure our client would be satisfied
-          with the ending result.</p>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
+          Learn More
+        </button>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Project AIDS Nigeria</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Project AIDS Nigeria (PAN) is organized exclusively for the charitable and educational purpose of helping rural communities
+                in Nigeria combat the HIV/AIDS epidemic. For my last project during Coding Bootcamp my group and I got an amazing
+                opportunity to re-design and add more responsive elements to an existing website. Our client and founder of PAN,
+                Domale, wanted a more modern website with an interactive curriculum and a way for students to get certified to
+                start a PAN club at their school. We made sure to pay attention to details to ensure our client would be satisfied
+                with the ending result.
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -250,11 +275,9 @@
         <h3>Project Name: Charity Connect</h3>
         <p>Role: Front-End Developer</p>
         <p>This web app allows users to search for charities based on causes they are interested in. Causes can include anything
-          from animals, poverty, homelessness, to specific regions in need of support. It then searches the Charity Navigator
-          API using the users input to find relevant charity information (name, rating, tag line, website, and address).
-          The charities are populated on a map using the Google Maps API in conjunction with the Geocoding API which translates
-          the address into latitude and longitude coordinates. When the user clicks on a pin, the relevant information is
-          shown in an information window including a link to the charity's website.</p>
+          from animals, poverty, homelessness, to specific regions in need of support. When the user clicks on a pin, the
+          relevant information is shown in an information window including a link to the charity's website.</p>
+        <a class="btn btn-secondary" href="#" role="button">Visit Website</a>
       </div>
       <div class="col-md-6 text-center">
         <img id="laptopimgs" src="./assets/images/charityconnect.png" alt="charityconnect">
@@ -270,11 +293,8 @@
         <h3>Project Name: EventSMS</h3>
         <p>Role: Front-End Developer</p>
         <p>EventSMS is a full stack web application that allows users to discover new and exciting events, restaurants, and
-          businesses in the area in which they live. During the sign up process users are prompted with a survey that captures
-          details about them that help us deliver event, restaurant, and business information. Once logged in users are directed
-          to their personalized dashboard where they can explore events based on their profile. Users can also add more preferences
-          to their profile through the two input fields within the sidebar. These preferences are also stored in a database
-          for data persistance.</p>
+          businesses in the area in which they live.</p>
+        <a class="btn btn-secondary" href="#" role="button">Visit Website</a>
       </div>
     </div>
   </div>
@@ -349,8 +369,15 @@
   </section>
   <!-- END OF FOOTER -->
 
+
+
   <!-- Optional JavaScript -->
   <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+
+  <script>
+    initComparisons();
+  </script>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
