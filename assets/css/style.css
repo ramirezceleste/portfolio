@@ -149,11 +149,6 @@ img {
     margin-top: 50px;
 }
 
-#contact {
-    padding-right: 200px;
-    padding-left: 200px;
-}
-
 #saying {
     padding-top: 150px;
 }
@@ -284,9 +279,8 @@ a.btn:hover, [type=button]:hover {
     background-color: #fcb2a9;
 }
 
-
-/* Small devices (landscape phones, 400px and up) */
-@media (min-width: 400px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
     #nav-name {
         display: none;
     }
@@ -312,11 +306,30 @@ a.btn:hover, [type=button]:hover {
         /* padding-bottom: 55px; */
         padding-bottom: 0px;
     }
+ }
 
-}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 500%;
+    }
+    #barskills {
+        display: none;
+    }
+    #compcontainer {
+        padding-bottom: 100px;
+        padding-left: 100px;
+    }
+    .charityconnectimg {
+        padding-bottom: 0px;
+    }
+ }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1 {
+        font-size: 500%;
+    }
     #nav-name {
         display: none;
     }
@@ -333,10 +346,17 @@ a.btn:hover, [type=button]:hover {
         padding-bottom: 55px;
         /* padding-bottom: 0px; */
     }
-}
+    #barskills {
+        display: none;
+    }
+
+ }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1 {
+        font-size: 500%;
+    }
     #name {
         display: none;
     }
@@ -364,11 +384,19 @@ a.btn:hover, [type=button]:hover {
     #compcontainer {
         padding-left: 0px;
     }
-    
-}
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { 
+    h1 {
+        font-size: 500%;
+    }
+    #name {
+        display: none;
+    }
+    #nav-name {
+        display: list-item;
+    }
     #contact {
         padding-left: 200px;
         padding-right: 200px;
@@ -377,4 +405,7 @@ a.btn:hover, [type=button]:hover {
     #compcontainer {
         padding-left: 100px;
     }
-}
+    #skilllist {
+        display: none;
+    }
+ }
