@@ -8,6 +8,7 @@
     src: url('../fonts/WildernessTypeface.ttf'); /*URL to font*/
 }
 
+
 h1 {
     font-family: 'Wilderness';
     font-size: 300%;
@@ -18,7 +19,7 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
-a, p {
+a, p, label {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -48,7 +49,7 @@ img {
 }
 
 #laptopimgs {
-    width: 500px;
+    width: 350px;
 }
 
 [type=text], [type=email], textarea {
@@ -83,14 +84,6 @@ img {
     background-color: #fffff8;
 }
 
-/* .fab:hover {
-    color: #022d41;
-} */
-
-/* #navbar {
-    background: transparent !important;
-} */
-
 .jumbotron-fluid {
     margin-bottom: 0px;
 }
@@ -108,6 +101,8 @@ img {
     width: 300px;
     border: 3px solid;
     background-color: #fffff8;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #skillstitle {
@@ -117,6 +112,8 @@ img {
     width: 300px;
     border: 3px solid;
     background-color: #fffff8;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 #experiencetitle {
@@ -126,6 +123,8 @@ img {
     width: 300px;
     border: 3px solid;
     background-color: #fffff8;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #projectstitle {
@@ -135,6 +134,8 @@ img {
     width: 300px;
     border: 3px solid;
     background-color: #fffff8;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 
 #contactstitle {
@@ -144,6 +145,13 @@ img {
     width: 300px;
     border: 3px solid;
     background-color: #fffff8;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#contact {
+    padding-right: 200px;
+    padding-left: 200px;
 }
 
 #saying {
@@ -158,13 +166,13 @@ img {
     color: black !important;
 }
 
-/* .header-bar {
-    margin: 25px 0 75px 0;
-    width: 70px;
-    height: 4px;
-    background: #444649;
-    text-align: center!important;
-} */
+.charityconnectimg {
+    padding-bottom: 55px;
+}
+
+#projectcontainer {
+    padding-bottom: 20px;
+}
 
 .list-inline {
     padding-left: 0;
@@ -175,7 +183,6 @@ img {
 #fullpage {
     height: 100vh;
     color: white;
-    /* background-color: #daecf3; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("../images/desk.jpg");
     background-size:cover;
 	background-position:center;
@@ -199,7 +206,6 @@ img {
 footer {
     background-color: #fcb2a9;
 }
-
 
 a.btn,[type=button], [type=submit] {
     display: inline-block;
@@ -232,7 +238,7 @@ a.btn:hover, [type=button]:hover {
 
 #img-slider, #img-sliders {
     height: auto;
-    width: 300px;
+    width: 350px;
 }
 
 * {box-sizing: border-box;}
@@ -261,7 +267,7 @@ a.btn:hover, [type=button]:hover {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
+  background-color:#fcb2a9;
   opacity: 0.7;
   border-radius: 50%;
 }
@@ -284,6 +290,29 @@ a.btn:hover, [type=button]:hover {
     #nav-name {
         display: none;
     }
+    h1 {
+        font-size: 500%;
+    }
+
+    #barskills {
+        display: none;
+    }
+
+    #contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #compcontainer {
+        padding-bottom: 100px;
+        padding-left: 25px;
+    }
+
+    .charityconnectimg {
+        /* padding-bottom: 55px; */
+        padding-bottom: 0px;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -293,6 +322,16 @@ a.btn:hover, [type=button]:hover {
     }
     h1 {
         font-size: 500%;
+    }
+
+    #compcontainer {
+        padding-bottom: 100px;
+        padding-left: 0px;
+    }
+
+    .charityconnectimg {
+        padding-bottom: 55px;
+        /* padding-bottom: 0px; */
     }
 }
 
@@ -304,10 +343,38 @@ a.btn:hover, [type=button]:hover {
     #nav-name {
         display: list-item;
     }
+
+    #barskills {
+        display: block;
+    }
+
+    #skilllist {
+        display: none;
+    }
+
+    #contact {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .img-comp-container {
+        left: 50px;
+    }
+
+    #compcontainer {
+        padding-left: 0px;
+    }
     
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-   
+    #contact {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #compcontainer {
+        padding-left: 100px;
+    }
 }
